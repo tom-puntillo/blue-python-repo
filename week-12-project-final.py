@@ -7,7 +7,7 @@ if department_name == 'Marketing' or department_name == 'Accounting' or departme
     print('Here are the names of your EC2 instances: ')
     
     for n in range(instances_needed):
-        print(department_name, random.randrange(instances_needed), random.randrange(instances_needed), sep='_')
+        print(department_name, random.randint(1, instances_needed), random.randint(1, instances_needed), sep='_')
 
 else:
     print('You should not be using this name genterator')
