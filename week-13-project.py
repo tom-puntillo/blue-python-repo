@@ -1,9 +1,6 @@
 import os
-
 files = {}
-
 file_list = os.listdir()
-
 file_name_list = []
 file_size_list = []
 
