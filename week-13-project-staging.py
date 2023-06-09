@@ -1,11 +1,24 @@
 import os
 
-path = '/home/ec2-user/environment/blue-python-repo'
+from os.path import getsize()
 
-path1 = '/home/ec2-user/environment/'
+files = {}
 
-print(os.getcwd())
+file_list = []
 
-print(os.listdir())
 
-print(os.stat(('/home/ec2-user/environment/.c9')).st_size)
+file_name = ''
+file_size = ''
+
+directory = (os.getcwd()
+
+
+
+
+
+(os.getcwd()
+
+(os.listdir()
+
+(os.stat(()).st_size)
+os.chdir('/home/ec2-user/environment/blue-python-repo')
