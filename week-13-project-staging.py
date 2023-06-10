@@ -1,24 +1,16 @@
 import os
 
-from os.path import getsize()
-
-files = {}
-
+os.chdir('/home/ec2-user/environment/blue-python-repo')
 file_list = []
 
-
-file_name = ''
-file_size = ''
-
-directory = (os.getcwd()
-
-
-
-
-
-(os.getcwd()
-
-(os.listdir()
-
-(os.stat(()).st_size)
-os.chdir('/home/ec2-user/environment/blue-python-repo')
+for name in os.listdir():
+    size = os.stat(name).st_size
+    
+    file_dict = {
+        'Name' : name,
+        'Size' : size
+    }
+    
+    file_list.append(file_dict)
+    
+print(file_list)
