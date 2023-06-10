@@ -1,19 +1,15 @@
 import os
-files = {}
-file_list = os.listdir()
-file_name_list = []
-file_size_list = []
 
-for name in file_list:
-    if name in file_list:
-        file_name_list.append(name)
+file_list = []
 
-for size in file_list:
-    file_size_list.append((os.stat((size)).st_size))
-
-for i in range(len(file_name_list)):
-    files[file_name_list[i]] = file_size_list[i]
-
-
-for name, size in files.items():
-    print(name, ':', size)
+for name in os.listdir():
+    size = os.stat(name).st_size
+    
+    file_dict = {
+        'Name' : name,
+        'Size' : size
+    }
+    
+    file_list.append(file_dict)
+    
+print(file_list)
